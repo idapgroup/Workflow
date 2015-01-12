@@ -14,10 +14,10 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.8'
   
   # Set default frameworks
-  s.preferred_dependency = 'Core'
+  s.default_subspec       = 'Core'
   
   # Preserve the layout of headers in the Module directory
-  s.header_mappings_dir = 'Module'
+  s.header_mappings_dir   = 'Module'
   
   # Subspecs
   s.subspec 'Core' do |cs|
